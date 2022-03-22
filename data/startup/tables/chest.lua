@@ -83,9 +83,7 @@ ChestUnique = {
 		isKey = true,
 		itemId = 2472,
 		itemPos = {x = 32648, y = 31905, z = 3},
-		container = 2853,
-		reward = {{2970, 1}, {3598, 20}, {3598, 7}},
-		weight = 44,
+		reward = {{2970, 1}},
 		storage = Storage.Quest.Key.ID3801
 	},
 	-- Emperor's cookies quest key 2299

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+    <announce delay="1000" type="event" message="Cold bodies with long teeth have lowered the temperature down in the Ankrahmun Mahrdis tombs." />
+	<announce delay="5000" type="event" message="Cold bodies with long teeth. Many teeth. Down in the Ankrahmun Mahrdis tombs." />
+	<areaspawn delay="5000" fromx="33192" fromy="32807" fromz="13" tox="33291" toy="32889" toz="13">
+		<monster name="Vampire" amount="50" />
+	</areaspawn>
+    <areaspawn delay="5000" fromx="33160" fromy="32809" fromz="14" tox="33279" toy="32893" toz="14">
+		<monster name="Vampire" amount="60" />
+	</areaspawn>
+</raid>

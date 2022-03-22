@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raid>
+	<announce delay="1000" type="event" message="Necromancer attack in the Ankrahmun Omruc tombs!" />
+	<areaspawn delay="20000" fromx="32998" fromy="32537" fromz="11" tox="33069" toy="32614" toz="11">
+		<monster name="Necromancer" amount="50" />
+	</areaspawn>
+</raid>

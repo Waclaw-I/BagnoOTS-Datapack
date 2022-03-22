@@ -680,6 +680,12 @@ function Player:onGainExperience(source, exp, rawExp)
 		end
 	end
 
+	-- Random Event Exp Multiplier
+	local randomEventExpRate = getGlobalStorageValue(GlobalStorage.ExperienceEvent)
+	if randomEventExpRate > 1 then
+		exp = exp + (rawExp * (randomEventExpRate - 1))
+	end
+
 	-- Store Bonus
 	useStaminaXp(self) -- Use store boost stamina
 
@@ -741,6 +747,13 @@ function Player:onGainSkillTries(skill, tries)
 
 	local skillRate = configManager.getNumber(configKeys.RATE_SKILL)
 	local magicRate = configManager.getNumber(configKeys.RATE_MAGIC)
+
+	-- Random Event Skill Rate
+	local randomEventSkillRate = getGlobalStorageValue(GlobalStorage.SkillEvent)
+	if randomEventSkillRate > 1 then
+		skillRate = skillRate * randomEventSkillRate
+		magicRate = magicRate * randomEventSkillRate
+	end
 
 	if(skill == SKILL_MAGLEVEL) then -- Magic getLevel
 		return tries * getRateFromTable(magicLevelStages, self:getBaseMagicLevel(), magicRate)

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+    <announce delay="1000" type="event" message="There's a sudden ice cold wind in the Ankrahmun Morguthis tombs!" />
+	<announce delay="5000" type="event" message="Some vampires appeared in Ankrahmun Morguthis tombs!" />
+	<areaspawn delay="5000" fromx="33273" fromy="32636" fromz="13" tox="33349" toy="32703" toz="13">
+		<monster name="Vampire" amount="40" />
+	</areaspawn>
+</raid>

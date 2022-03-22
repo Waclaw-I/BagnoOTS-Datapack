@@ -3,9 +3,9 @@
 -- Leave empty if you wish to disable.
 
 announcementChannels = {
-    ["serverAnnouncements"] = "", -- Used for an announcement channel on your discord
-    ["raids"] = "", -- Used to isolate raids on your discord
-    ["player-kills"] = "", -- Self-explaining
+    ["serverAnnouncements"] = "https://discord.com/api/webhooks/952531951879856199/YPOybpOOhc1P0FjwqVOxJ222bow-uGVDb3HbwIsFfA3EyXSq1jehtSbFa5FqEbglZNKh", -- Used for an announcement channel on your discord
+    ["raids"] = "https://discord.com/api/webhooks/954187053703233566/KNHWhIdi_2oWV4s4BC-2o65nSIEE7TULDDJl9z98MlX2SxfASdU9uvJzHKj_ta0oj0CQ", -- Used to isolate raids on your discord
+    ["player-kills"] = "https://discord.com/api/webhooks/952531951879856199/YPOybpOOhc1P0FjwqVOxJ222bow-uGVDb3HbwIsFfA3EyXSq1jehtSbFa5FqEbglZNKh", -- Self-explaining
 }
 
 -- Example of notification (After you do the config):

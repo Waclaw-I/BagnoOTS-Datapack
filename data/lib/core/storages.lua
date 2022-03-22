@@ -1262,6 +1262,7 @@ Storage = {
 		ToAppeaseTheMightyQuest = 51486,
 		IntoTheBonePit = 51487,
 		TheExterminator = 51488,
+		AritosTaskDoor = 51489,
 		RestInHallowedGround = {
 			Questline = 51495,
 			HolyWater = 51496,
@@ -2407,7 +2408,11 @@ GlobalStorage = {
 	CobraBastionFlask = 65012,
 	Inquisition = 65013,
 	Yasir = 65014,
-	NightmareIsle = 65015
+	NightmareIsle = 65015,
+	-- Random event storages from 65016 - 65018
+	ExperienceEvent = 65016,
+	LootEvent = 65017,
+	SkillEvent = 65018,
 }
 
 

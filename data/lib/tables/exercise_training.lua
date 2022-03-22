@@ -109,10 +109,16 @@ function exerciseEvent(playerId, tilePosition, weaponId, dummyId)
 	local expRate = getRateFromTable(skillToTraining, skillLevel, skillRateDefault)
 	if bonusDummy then bonusDummy = 1.1 else bonusDummy = 1 end
 
+	-- Random Event Skill Rate
+	local randomEventSkillRate = getGlobalStorageValue(GlobalStorage.SkillEvent)
+	if not randomEventSkillRate then
+		randomEventSkillRate = 1
+	end
+
 	if isMagic then
-		player:addManaSpent(math.ceil(500 * expRate) * bonusDummy)
+		player:addManaSpent(math.ceil(500 * expRate * randomEventSkillRate) * bonusDummy)
 	else
-		player:addSkillTries(exerciseWeaponsTable[weaponId].skill, (7 * expRate) * bonusDummy)
+		player:addSkillTries(exerciseWeaponsTable[weaponId].skill, (7 * expRate * randomEventSkillRate) * bonusDummy)
 	end
 
 	weapon:setAttribute(ITEM_ATTRIBUTE_CHARGES, (weaponCharges - 1))

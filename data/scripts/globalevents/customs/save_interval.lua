@@ -2,10 +2,6 @@
 -- (configKeys.SAVE_INTERVAL_TIME) * 60 * 60 * 1000) for (configKeys.SAVE_INTERVAL_TIME) * 60 * 1000)
 
 local function serverSave(interval)
-    if configManager.getBoolean(configKeys.SAVE_INTERVAL_CLEAN_MAP) then
-        cleanMap()
-    end
-
     saveServer()
     local message = "Server save complete. Next save in " .. math.floor(interval/3600000) .. " hour(s)!", MESSAGE_STATUS_WARNING
         Webhook.send("Server save", message, WEBHOOK_COLOR_WARNING)
