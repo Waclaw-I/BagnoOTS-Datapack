@@ -5,4 +5,4 @@
 	<areaspawn delay="10000" fromx="32300" fromy="32247" fromz="8" tox="32396" toy="32258" toz="8">
 		<monster name="Munster" amount="1" />
 	</areaspawn>
-</raid> 
+</raid>
